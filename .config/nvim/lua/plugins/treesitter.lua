@@ -3,14 +3,15 @@ return {
     "nvim-treesitter/nvim-treesitter",
     tag = "v0.9.3",
     opts = {
+      highlight = { enable = true },
+      indent = { enable = true },
       ensure_installed = {
         "javascript",
         "typescript",
         "css",
+        "html",
         "tsx",
-        "go",
         "gitignore",
-        "graphql",
         "http",
         "json",
         "scss",

@@ -13,13 +13,10 @@ return {
       })
     end,
   },
-
-  -- lsp servers
   {
     "neovim/nvim-lspconfig",
     opts = {
       inlay_hints = { enabled = true },
-      ---@type lspconfig.options
       servers = {
         cssls = {},
         tailwindcss = {
@@ -128,10 +125,22 @@ return {
     },
   },
   {
-    "nvim-cmp",
-    dependencies = { "hrsh7th/cmp-emoji" },
+    "hrsh7th/nvim-cmp",
+    optional = true,
+    dependencies = { "saadparwaiz1/cmp_luasnip", "mlaursen/vim-react-snippets" },
     opts = function(_, opts)
-      table.insert(opts.sources, { name = "emoji" })
+      require("vim-react-snippets").lazy_load()
+      opts.snippet = {
+        expand = function(args)
+          require("luasnip").lsp_expand(args.body)
+        end,
+      }
+      table.insert(opts.sources, { name = "luasnip" })
     end,
+  -- stylua: ignore
+  keys = {
+    { "<tab>", function() require("luasnip").jump(1) end, mode = "s" },
+    { "<s-tab>", function() require("luasnip").jump(-1) end, mode = { "i", "s" } },
+  },
   },
 }

@@ -16,7 +16,7 @@ source $ZSH/oh-my-zsh.sh
 # User configuration
 
 # Kitty functions
-function wails-app() {
+function electron-app() {
   export PROJECT_DIR=$1
   kitty --session ~/.config/kitty/web.conf
 }
