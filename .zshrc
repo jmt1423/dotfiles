@@ -54,6 +54,9 @@ function in {
     fi
 }
 
+# Path variables
+export PATH="$HOME/.local/bin:$PATH"
+
 # Helpful aliases
 alias c='clear' # clear terminal
 alias l='eza -lh --icons=auto' # long list
@@ -68,6 +71,9 @@ alias pa='$aurhelper -Ss' # list available package
 alias pc='$aurhelper -Sc' # remove unused cache
 alias po='$aurhelper -Qtdq | $aurhelper -Rns -' # remove unused packages, also try > $aurhelper -Qqd | $aurhelper -Rsu --print -
 alias vc='code' # gui code editor
+alias nvimzsh='nvim ~/.zshrc'
+alias omzo='omz reload'
+alias j='z'
 
 # Directory navigation shortcuts
 alias ..='cd ..'
@@ -87,3 +93,9 @@ alias vim='nvim'
 # Display Pokemon
 pokemon-colorscripts --no-title -r 1,3,6
 eval "$(starship init zsh)"
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+eval "$(zoxide init zsh)"
