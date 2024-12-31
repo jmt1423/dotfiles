@@ -176,7 +176,7 @@ return {
     ---@type blink.cmp.Config
     opts = {
       snippets = {
-        expand = function(snippet, _)
+        expand = function(snippet)
           return LazyVim.cmp.expand(snippet)
         end,
       },
