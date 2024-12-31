@@ -9,7 +9,7 @@ export ZSH="$HOME/.oh-my-zsh"
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
 ZSH_THEME="robbyrussell"
 
-plugins=(git zsh-autosuggestions ls zsh-syntax-highlighting fast-syntax-highlighting autojump)
+plugins=(git zsh-autosuggestions ls zsh-syntax-highlighting fast-syntax-highlighting)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -25,6 +25,8 @@ export PATH="$PATH:/opt/nvim-linux64/bin"
 #
 # Example aliases
 alias nvimzsh="nvim ~/.zshrc"
+alias j="z"
+alias omzo="omz reload"
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 eval "$(starship init zsh)" 
@@ -37,5 +39,7 @@ export NVM_DIR="$HOME/.nvm"
 
 export PATH=$PATH:/usr/local/go/bin
 export PATH=$PATH:~/go/bin
+export PATH=$PATH:/home/jont/.local/bin
 alias config='/usr/bin/git --git-dir=/home/jont/.cfg/ --work-tree=/home/jont'
 export PATH="/usr/local/zig:$PATH"
+eval "$(zoxide init zsh)"
