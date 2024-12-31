@@ -3,7 +3,7 @@
 -- Add any additional options here
 vim.opt.clipboard = "unnamedplus"
 vim.opt.autoindent = true
-vim.opt.smartindent = true
+-- vim.opt.smartindent = true
 vim.opt.hlsearch = true
 vim.opt.backup = false
 vim.opt.showcmd = true
