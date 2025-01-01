@@ -135,4 +135,16 @@ return {
       "nvim-lua/plenary.nvim",
     },
   },
+  {
+    "kawre/leetcode.nvim",
+    dependencies = {
+        "MunifTanjim/nui.nvim",
+    },
+    opts = {
+          ---@type lc.lang
+    lang = "typescript",
+
+        -- configuration goes here
+    },
+}
 }

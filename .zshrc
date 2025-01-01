@@ -74,6 +74,7 @@ alias vc='code' # gui code editor
 alias nvimzsh='nvim ~/.zshrc'
 alias omzo='omz reload'
 alias j='z'
+alias lock='swaylock'
 
 # Directory navigation shortcuts
 alias ..='cd ..'
