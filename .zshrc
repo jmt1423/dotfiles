@@ -2,7 +2,7 @@
 ZSH=/usr/share/oh-my-zsh/
 
 # List of plugins used
-plugins=( git sudo zsh-256color zsh-autosuggestions zsh-syntax-highlighting )
+plugins=( git sudo zsh-256color zsh-autosuggestions zsh-syntax-highlighting copybuffer)
 source $ZSH/oh-my-zsh.sh
 
 # In case a command is not found, try to find the package that has it
@@ -76,6 +76,7 @@ alias omzo='omz reload'
 alias j='z'
 alias lock='swaylock'
 alias zen='io.github.zen_browser.zen'
+alias copyp='~/scripts/prettierSetup/./copyPrettier.zsh'
 
 # Directory navigation shortcuts
 alias ..='cd ..'
