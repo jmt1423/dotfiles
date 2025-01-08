@@ -75,6 +75,7 @@ alias nvimzsh='nvim ~/.zshrc'
 alias omzo='omz reload'
 alias j='z'
 alias lock='swaylock'
+alias zen='io.github.zen_browser.zen'
 
 # Directory navigation shortcuts
 alias ..='cd ..'
@@ -82,6 +83,9 @@ alias ...='cd ../..'
 alias .3='cd ../../..'
 alias .4='cd ../../../..'
 alias .5='cd ../../../../..'
+
+# Development aliases
+alias npmbr='npm run build && node dist/cli.js'
 
 # dotfile management
 alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'

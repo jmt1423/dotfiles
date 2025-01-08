@@ -9,6 +9,7 @@ return {
         "javascript",
         "typescript",
         "css",
+        "astro",
         "html",
         "tsx",
         "gitignore",
