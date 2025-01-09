@@ -77,6 +77,8 @@ alias j='z'
 alias lock='swaylock'
 alias zen='io.github.zen_browser.zen'
 alias copyp='~/scripts/prettierSetup/./copyPrettier.zsh'
+alias ff='fastfetch'
+alias cfgac='source ~/scripts/dotfileManagement/./addAndCommit.zsh'
 
 # Directory navigation shortcuts
 alias ..='cd ..'
