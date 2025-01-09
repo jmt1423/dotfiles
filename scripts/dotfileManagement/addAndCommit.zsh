@@ -14,10 +14,6 @@ config add .config/starship.toml
 config add .zshrc 
 config add scripts/
 
-echo "============================"
-echo "        Files added         "
-echo "============================"
-
 config commit -m $1
 
 echo "============================"
