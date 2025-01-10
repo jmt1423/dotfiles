@@ -1,5 +1,23 @@
 return {
   {
+    "snacks.nvim",
+    opts = {
+      dashboard = {
+        sections = {
+          {
+            section = "terminal",
+            cmd = "pokemon-colorscripts -r --no-title; sleep .1",
+            random = 10,
+            height = 15,
+            padding = 2,
+          },
+          { section = "keys", gap = 1, padding = 1 },
+          { section = "startup" },
+        },
+      },
+    },
+  },
+  {
     "nvimdev/dashboard-nvim",
     enabled = false,
   },
@@ -138,13 +156,13 @@ return {
   {
     "kawre/leetcode.nvim",
     dependencies = {
-        "MunifTanjim/nui.nvim",
+      "MunifTanjim/nui.nvim",
     },
     opts = {
-          ---@type lc.lang
-    lang = "typescript",
+      ---@type lc.lang
+      lang = "typescript",
 
-        -- configuration goes here
+      -- configuration goes here
     },
-}
+  },
 }
