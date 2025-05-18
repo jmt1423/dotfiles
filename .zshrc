@@ -19,7 +19,7 @@ alias sor="source ~/.zshrc"
 alias webs="webstorm"
 alias nvz="nvim ~/.zshrc"
 alias j="z"
-alias df="yadm"
+alias dot="yadm"
 
 # Directory navigation shortcuts
 alias ..="cd .."
